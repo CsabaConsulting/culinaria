@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "432018820926",
+    "firebase_url": "https://appculinariavirtual.firebaseio.com",
+    "project_id": "appculinariavirtual",
+    "storage_bucket": "appculinariavirtual.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432018820926:android:b1d3204a1a29bb7dba666f",
+        "android_client_info": {
+          "package_name": "com.sena.appculinariavirtual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432018820926-858m0ibekme22ojfbmp6ef7n0bk9vkq1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sena.appculinariavirtual",
+            "certificate_hash": "2b6b90630504f25881c83f53cd29b651457c43cb"
+          }
+        },
+        {
+          "client_id": "432018820926-q76h25d9lv4aopcqs1s58mpapqlvlvc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS_VyKrDKJco0auNZ3VcgSlHUlLMFeUdw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432018820926-q76h25d9lv4aopcqs1s58mpapqlvlvc2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
