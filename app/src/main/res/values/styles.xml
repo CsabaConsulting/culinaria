@@ -12,7 +12,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:editTextColor">@color/colorText</item>
-        <item name="android:textColorHint">@color/colorSecondaryText</item>
+        <item name="android:textColorHint">#B3303030</item>
 
         <item name="android:windowNoTitle">true</item>
     </style>

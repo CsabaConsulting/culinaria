@@ -15,4 +15,8 @@
     <string name="login_password">Contraseña</string>
     <string name="btn_login">Iniciar sesión</string>
 
+    <string-array name="departaments">
+        <item>Risaralda</item>
+    </string-array>
+
 </resources>
