@@ -22,4 +22,11 @@
         android:name="com.sena.appculinariavirtual.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_book"
+        android:name="com.sena.appculinariavirtual.ui.book.BookFragment"
+        android:label="@string/menu_book"
+        tools:layout="@layout/fragment_book"/>
+
 </navigation>

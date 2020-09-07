@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import com.sena.appculinariavirtual.R
+import com.sena.appculinariavirtual.adapters.ArrayAdapterSpinner
 import com.sena.appculinariavirtual.data.LocalUbicationRepository
 import com.sena.appculinariavirtual.dominio.entities.City
 import com.sena.appculinariavirtual.dominio.entities.Department
@@ -31,9 +32,7 @@ class SignUpActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     private fun setAdapterSpinnerDepartment(){
 
         val namesDepartment = departments.map { depart -> depart.name }
-
-        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, namesDepartment)
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        val adapter = ArrayAdapterSpinner(context = this, items = namesDepartment).getAdapter()
 
         spinnerDepartaments.adapter = adapter
         spinnerDepartaments.onItemSelectedListener = this
@@ -42,6 +41,8 @@ class SignUpActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     private fun goToLogIn() {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
+
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
     }
 
     override fun onNothingSelected(adapterView: AdapterView<*>?) {
@@ -55,9 +56,7 @@ class SignUpActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
     private fun setCitiesSpinner(cities: MutableList<City>){
         val namesCity = cities.map { city -> city.name }
-
-        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, namesCity)
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        val adapter = ArrayAdapterSpinner(context = this, items = namesCity).getAdapter()
 
         spinnerCities.adapter = adapter
     }

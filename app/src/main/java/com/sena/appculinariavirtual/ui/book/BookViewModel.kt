@@ -1,13 +1,15 @@
-package com.sena.appculinariavirtual.ui.home
+package com.sena.appculinariavirtual.ui.book
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+
+class BookViewModel: ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "Interactuar con el libro"
+        value = "Esto es un mensaje en tiempo real"
     }
+
     val text: LiveData<String> = _text
 }

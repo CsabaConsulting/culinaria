@@ -12,12 +12,12 @@
 
         <activity
             android:name=".ui.auth.SignUpActivity"
-            android:theme="@style/AppThemeAuth">
+            android:theme="@style/NoPreview">
         </activity>
 
         <activity
             android:name=".ui.auth.LoginActivity"
-            android:theme="@style/AppThemeAuth">
+            android:theme="@style/NoPreview">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
